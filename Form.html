@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario UNAB</title>
+    </head>
+    <body>
+        <h1>THE DUMMIES</h1> 
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDz6YyDsq9mGU_YhagDDlHrrnys9_Xwag8A&usqp=CAU"><br>
+            <hr />
+            <br>
+            Por favor diligencie el siguiente formulario:
+            <br><br>
+        <form>
+            <table border="1" cellspacing="1" cellpadding="4">
+                <tr>
+                    <td><label>Nombre:</label></td>
+                    <td><input type="text" id="Nombre" name="Nombre" placeholder="Nombre completo" size="30"/></td>
+                    <td><label>Documento: </label> </td>
+                    <td><input type="text" id="documento" name="Documento"  placeholder="Número de documento"/></td>
+                </tr>
+                <tr>
+                    <td><label>Email: </label> </td>
+                    <td colspan="3"><input type="email" id="email" name="email"  placeholder="Ingrese email" size="70"/></td>
+                    
+                </tr>
+                <tr>
+                    <td><label>Contacto: </label></td>
+                    <td><input type="text" id="contacto" name="Contacto" placeholder="Digite número de contacto..."/></td>
+                    <td><label>Genero: </label></td>
+                    <td><input type="radio" id="m" name="genero"/> M
+                        <input type="radio" id="f" name="genero"/> F</td>
+                </tr>
+                <tr>
+                    <td><label>Talla: </label></td>
+                    <td><input type="text" id="talla" name="Talla" placeholder="Digite talla en cm"/></td>
+                    <td rowspan="2" colspan="2"><strong>Formulario <br> Indice de Masa Corporal </strong> </td>
+                </tr>
+                <tr>
+                    <td><label>Peso: </label></td>
+                    <td><input type="number" name="Peso" placeholder="Digite peso en Kg"/></td>
+                </tr>
+            </table>
+            <p align="center"><input type="submit" name="Enviar" value="Enviar" /></p>
+        </form>
+    </body>
+ </html>
