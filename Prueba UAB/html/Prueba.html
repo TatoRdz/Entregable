@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="C:\Users\TORO\Documents\Visual Studio Code\Prueba UAB\css\estilos.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <title>Formulario UNAB</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--bg-info = sirve para el color de fondo del menu -->
+        <nav class="navbar navbar-expand navbar-nav-scroll bg-info">
+            <a class="col1 offset-10" href="...">
+                <img src="C:\Users\TORO\Documents\Visual Studio Code\Prueba UAB\img\home.png">
+            </a>
+            <a class="col2" href="...">
+                <img src="C:\Users\TORO\Documents\Visual Studio Code\Prueba UAB\img\iniciosesion.png" alt="...">
+            </a>
+            <a class="col3" href="...">
+                <img src="C:\Users\TORO\Documents\Visual Studio Code\Prueba UAB\img\opciones.png" alt="...">
+            </a>
+        </nav>
+
+        <div class="div-logo ">
+            <h1 small class="text-decoration-underline">THE DUMMIES</h1>
+            <img src="C:\Users\TORO\Documents\Visual Studio Code\Prueba UAB\img\Logo.jpg" class="logo">
+        </div>
+        <div class="row offset-2">
+            <div class="col-md-12">
+                <form class="formulario">
+                    <div class="row titulo-form">
+                        <h1 small>FORMULARIO</h1>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
+                        <div id="nombre-descripcion" class="form-text">Por favor digite su nombre completo</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="documento" class="form-label">Documento</label>
+                        <input type="number" class="form-control" id="documento" aria-describedby="documento">
+                        <div id="docu-descripcion" class="form-text">Por favor digite su documento de identidad</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email">
+                        <div id="email-descripcion" class="form-text">Por favor digite su correo electronico</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="columnas col-9">
+                            <label for="celular" class="form-label">Celular</label>
+                            <input type="number" class="form-control" id="celular" aria-describedby="celular">
+                            <div id="celular-descripcion" class="form-text">Por favor digite su numero de celular</div>
+                        </div>
+                        <div class="columnas col-3" id="columnas-genero">
+                            <label class="form-label">Genero</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="generoM">
+                                <label class="form-check-label" for="generoM">
+                                    M
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="generoF" checked>
+                                <label class="form-check-label" for="generoF">
+                                    F
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="columnas mb-3 col-6">
+                            <label for="estatura" class="form-label">Estatura</label>
+                            <input type="number" class="form-control" id="estatura" aria-describedby="estatura">
+                            <div id="estatura-descripcion" class="form-text">Por favor ingrese su estatura</div>
+                        </div>
+                        <div class="columnas mb-3 col-6">
+                            <label for="peso" class="form-label">Peso</label>
+                            <input type="number" class="form-control" id="peso" aria-describedby="peso">
+                            <div id="peso-descripcion" class="form-text">Por favor ingrese su peso</div>
+                        </div>
+                    </div>
+                    <div class="row div-button offset-5">
+                        <button type="submit" class="btn-formulario btn-primary">Enviar</button>
+                    </div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!--
+    <div class="contenedor">
+        <div class="menu">
+            <a href="www.google.com">
+                <div class="inicio_sesion">
+                </div>
+            </a>
+            <div class="opciones">
+            </div>
+            <div class="inicio">
+            </div>
+        </div>
+        <div class="div_logoTitulo">
+            <h1>THE DUMMIES</h1>
+        </div>
+
+        <div class="div_tabla_registro">
+            <div class="titulo_tabla">
+                <br>
+                <h4 class="titulo_tabla_registro">Por favor diligencie el siguiente formulario:</h4>
+                <br>
+            </div>
+            <form>
+                <table class="tabla_registro" border="1" cellspacing="2" cellpadding="5">
+                    <tr>
+                        <td><label class="nom_menu">Nombre:</label></td>
+                        <td><input type="text" id="Nombre" name="Nombre" placeholder="Nombre completo" size="30" /></td>
+                        <td><label class="nom_menu">Documento: </label> </td>
+                        <td><input type="number" id="documento" name="Documento" placeholder="Número de documento" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="nom_menu">Email: </label> </td>
+                        <td colspan="3"><input type="email" id="email" name="email" placeholder="Ingrese email"
+                                size="70" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="nom_menu">Contacto: </label></td>
+                        <td><input type="number" id="contacto" name="Contacto"
+                                placeholder="Digite número de contacto..." />
+                        </td>
+                        <td><label class="nom_menu">Genero: </label></td>
+                        <td><input type="radio" id="m" name="genero" /> M
+                            <input type="radio" id="f" name="genero" /> F
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="nom_menu">Estatura: </label></td>
+                        <td><input type="number" id="estatura" step="0.1" name="Estatura"
+                                placeholder="Digite estatura ej: 1,50" /></td>
+                        <td rowspan="2" colspan="2"><strong>Formulario <br> Indice de Masa Corporal </strong> </td>
+                    </tr>
+                    <tr>
+                        <td><label class="nom_menu">Peso: </label></td>
+                        <td><input type="number" step="0.1" name="Peso" placeholder="Digite peso en Kg" /></td>
+                    </tr>
+                </table>
+                <p align="center"><input type="submit" name="Enviar" value="Enviar" id="btn_enviar_formulario" /></p>
+            </form>
+        </div>
+        <div class="pie_de_pagina">
+            CONTIENE LOS DATOS DE LOS CREADORES
+        </div>
+    </div>
+    -->
+</body>
+
+</html>
