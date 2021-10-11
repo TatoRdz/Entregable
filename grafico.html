@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resultados Encuesta IMC -UNAB</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" ></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(dibujarGraficoTorta);
+
+            function cargarData (){
+                let personas = new google.visualization.DataTable();
+                personas.addColumn('string','Genero');
+                personas.addColumn('number','Cantidad');
+                
+                personas.addRows([
+                    ['Masculino',40],
+                    ['Femenino',60],
+                ]);
+
+                return personas;
+            }
+            function dibujarGraficoTorta(){
+                let data = cargarData();
+                var options = {'title':'GRÁFICO DE GÉNERO - ESTUDIANTES UNAB',
+                     'width':600,
+                     'height':500};
+
+                var chart = new google.visualization.PieChart(document.getElementById('grafico'));
+                chart.draw(data, options);
+            }
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(dibujarGrafico);
+            
+            function cargarDatos (){
+            let indiceMasa = new google.visualization.DataTable();
+                indiceMasa.addColumn('string','Nivel');
+                indiceMasa.addColumn('number','indice');
+                indiceMasa.addRows([
+                    ['Bajo',10],
+                    ['Normal',60],
+                    ['Alto',30]
+                ]);
+
+                return indiceMasa;
+            }
+
+            
+            function dibujarGrafico(){
+                let datauno = cargarDatos();
+                var optiones = {'title':'GRAFICO INDICE DE MASA CORPORAL ESTUDIANTES',
+                     'width':600,
+                     'height':500};
+
+                var grafi = new google.visualization.PieChart(document.getElementById('graficouno'));
+                grafi.draw(datauno, optiones);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>THE DUMMIES</h1> 
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDz6YyDsq9mGU_YhagDDlHrrnys9_Xwag8A&usqp=CAU"><br>
+        <hr />
+        <br>
+        <table border="20">
+            <td> <div id="grafico"></div> </td>
+        <td> <div id="graficouno"></div></td>
+        
+        </table>
+
+    </body>
+</html>
